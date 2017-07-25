@@ -1,0 +1,39 @@
+.head
+	background-color: $white
+	position: relative
+	&__wrap
+		max-width: 1170px
+		width: 100%
+		margin: 0 auto
+		padding: 16px
+		+clearfix
+	&__logo
+		float: left
+		width: 10%
+		min-width: 100px
+		img
+			max-width: 100%
+			height: auto
+			vertical-align: top
+	&__users
+		float: right
+		padding-top: 13px
+		span
+			margin-right: 32px
+		.link
+			background-color: white
+			border-radius: 4px
+			color: #f65121
+			height: 40px
+			padding: 8px 15px
+			text-transform: none
+			text-decoration: none
+@media screen and (max-width: 768px)
+	.head__users
+		span
+			display: none
+		.link
+			display: none
+	.main-mnu
+		line-height: 1.5
+	

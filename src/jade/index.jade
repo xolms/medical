@@ -1,0 +1,91 @@
+extends template
+block title
+    title Главная
+block content
+    aside.aside
+        a(href='/').logo.logo__left
+            img(src='img/logo.png' alt='123')
+        nav.nav.left-mnu
+            ul
+                li
+                    a(href='#')
+                        img(src="img/forus.png", alt="123")
+                        span О компании
+                li
+                    a(href='#')
+                        img(src="img/manager.png", alt="123")
+                        span Схема работы
+                li
+                    a(href='#')
+                        img(src="img/news.png", alt="123")
+                        span Новости
+                li.active
+                    a(href='portal.html')
+                        img(src="img/portal.png", alt="123")
+                        span Портал
+                li
+                    a(href='#')
+                        img(src="img/contacts.png", alt="123")
+                        span Контакты
+                li
+                    a(href='#')
+                        img(src="img/certificate.png", alt="123")
+                        span Лицензии
+    .wrapper.wrapper__left
+        .content__wrap
+            .head.head__left
+                .head__wrap
+                    a(href='/').link Портал
+                    .head__logo
+                    .head__users
+
+                        <a href="#" class="toggle-mnu"><span></span></a>
+                nav.nav.main-mnu
+                    ul
+                        li
+                            a(href='#')
+                                img(src="img/forus.png", alt="123")
+                                span О компании
+                        li
+                            a(href='#')
+                                img(src="img/manager.png", alt="123")
+                                span Схема работы
+                        li
+                            a(href='#')
+                                img(src="img/news.png", alt="123")
+                                span Новости
+                        li.active
+                            a(href='portal.html')
+                                img(src="img/portal.png", alt="123")
+                                span Портал
+                        li
+                            a(href='#')
+                                img(src="img/contacts.png", alt="123")
+                                span Контакты
+                        li
+                            a(href='#')
+                                img(src="img/certificate.png", alt="123")
+                                span Лицензии
+            .content.content__left
+                form.form
+                    .form__item
+                        label(for='email').form__label E-mail
+                        input(type='email' id='email' placeholder='E-mail' class='form__input' name='email')
+                    .form__item
+                        label(for='password').form__label Пароль
+                        input(type='password' class='form__input' id='password' placeholder='Пароль' name='password')
+                    .form__item
+                        label().form__i-check
+                            input(type='checkbox' name='remember').form__checkbox
+                            span Запомнить меня
+                    .form__item
+                        button(type='submit').form__button Войти
+
+        .footer.footer__left
+            .footer__wrap
+                .line
+                    span @medical
+                    a(href="#", title="title").footer__link Пользовательское соглашение
+                    a(href="mailto: xolms111@ya.ru", title="title").footer__link xolms111@ya.ru
+                .line
+                    p Лицензия на образовательную деятельность № 038188 от 26 января 2017 г.

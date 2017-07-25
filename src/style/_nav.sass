@@ -1,0 +1,59 @@
+.nav
+	ul
+		max-width: 1170px
+		width: 100%
+		margin: 0 auto
+		list-style-type: none
+		text-align: center
+	li
+		display: inline-block
+		width: 16%
+		position: relative
+		padding: 10px
+		
+	a
+		display: block
+		width: 100%
+		position: relative
+		z-index: 2
+		text-decoration: none
+		color: #99a8b7
+		font-size: 1.2em
+
+		span
+			display: block
+			padding-top: 20px
+		img
+			position: relative
+			z-index: 5
+			padding-top: 20px
+			
+	li
+		&.active
+			a
+				color: #000
+				&::after
+					position: absolute
+					content: ''
+					width: 80px
+					height: 80px
+					top: -5px
+					left: 0
+					right: 0
+					margin: 0 auto
+					background-color: #e9edf4	
+					border-radius: 10em
+		&:hover
+			&::after
+				top: 0
+			a
+				color: #000
+@media screen and (max-width: 992px)				
+	.nav
+		a
+			span 
+				display: none	
+@media screen and (max-width: 768px)
+	.nav
+		display: none
+		

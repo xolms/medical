@@ -1,0 +1,57 @@
+.wrapper__left
+	padding-left: 96px
+.aside
+	position: fixed
+	left: 0
+	bottom: 0
+	background-color: #f2f2f6
+	top: 0
+	width: 96px
+	height: 100%
+	.logo
+		width: 96px
+		text-align: center
+		height: 96px
+		display: block
+		line-height: 96px
+		
+		img
+			width: 80px
+			vertical-align: middle
+			display: inline-block
+.head__left
+	background-color: #fff
+	border-bottom: 1px solid #eaeef1
+	height: 96px
+	line-height: 96px
+	.head__wrap
+		padding:  0 25px
+		max-width: 100%
+		.link
+			text-transform: uppercase
+			text-decoration: none
+			color: #4c5d6e
+			font-family: "Roboto Regular", sans-serif
+.content__left
+	max-width: 100%
+	padding: 0 25px
+
+.left-mnu
+	ul
+		li
+			display: block
+			float: none
+			width: 96px
+			&.active
+				a::after
+					display: none
+			a
+				span
+					padding-top: 5px
+					font-size: 14px
+					
+@media screen and (max-width: 768px)
+	.aside
+		display: none
+	.wrapper__left
+		padding-left: 0
