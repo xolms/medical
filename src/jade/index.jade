@@ -2,51 +2,24 @@ extends template
 block title
     title Главная
 block content
-    aside.aside
-        a(href='/').logo.logo__left
-            img(src='img/logo.png' alt='123')
-        nav.nav.left-mnu
-            ul
-                li
-                    a(href='#')
-                        img(src="img/forus.png", alt="123")
-                        span О компании
-                li
-                    a(href='#')
-                        img(src="img/manager.png", alt="123")
-                        span Схема работы
-                li
-                    a(href='#')
-                        img(src="img/news.png", alt="123")
-                        span Новости
-                li.active
-                    a(href='portal.html')
-                        img(src="img/portal.png", alt="123")
-                        span Портал
-                li
-                    a(href='#')
-                        img(src="img/contacts.png", alt="123")
-                        span Контакты
-                li
-                    a(href='#')
-                        img(src="img/certificate.png", alt="123")
-                        span Лицензии
-    .wrapper.wrapper__left
+    .wrapper
         .content__wrap
-            .head.head__left
+            .head
                 .head__wrap
-                    a(href='/').link Портал
                     .head__logo
+                        a(href='#').logo
+                            img(src='img/logo.png' alt='123')
                     .head__users
-
+                        span.total-users Нас уже 1 920 792 человек
+                        a(href='portal').link Портал
                         <a href="#" class="toggle-mnu"><span></span></a>
-                nav.nav.main-mnu
+                .nav.main-mnu
                     ul
                         li
                             a(href='#')
                                 img(src="img/forus.png", alt="123")
                                 span О компании
-                        li
+                        li.active
                             a(href='#')
                                 img(src="img/manager.png", alt="123")
                                 span Схема работы
@@ -54,7 +27,7 @@ block content
                             a(href='#')
                                 img(src="img/news.png", alt="123")
                                 span Новости
-                        li.active
+                        li
                             a(href='portal.html')
                                 img(src="img/portal.png", alt="123")
                                 span Портал
@@ -66,22 +39,88 @@ block content
                             a(href='#')
                                 img(src="img/certificate.png", alt="123")
                                 span Лицензии
-            .content.content__left
-                form.form
-                    .form__item
-                        label(for='email').form__label E-mail
-                        input(type='email' id='email' placeholder='E-mail' class='form__input' name='email')
-                    .form__item
-                        label(for='password').form__label Пароль
-                        input(type='password' class='form__input' id='password' placeholder='Пароль' name='password')
-                    .form__item
-                        label().form__i-check
-                            input(type='checkbox' name='remember').form__checkbox
-                            span Запомнить меня
-                    .form__item
-                        button(type='submit').form__button Войти
 
-        .footer.footer__left
+            .section__wrap
+                .title__wrap
+                    h1 Хочешь научиться<br/>програмировать?
+                    p Получи доступ к десяткам бесплатных материалов
+                    p Общайся и учись у ведущих IT-специалистов
+                .slider__wrap
+                    .slider.owl-carousel.owl-theme
+                        .item
+                            img(src='http://loremflickr.com/630/300' alt='123')
+                        .item
+                            img(src='http://loremflickr.com/630/300' alt='123')
+                        .item
+                            img(src='http://loremflickr.com/630/300' alt='123')
+                        .item
+                            img(src='http://loremflickr.com/630/300' alt='123')
+                        .item
+                            img(src='http://loremflickr.com/630/300' alt='123')
+                        .item
+                            img(src='http://loremflickr.com/630/300' alt='123')
+                        .item
+                            img(src='http://loremflickr.com/630/300' alt='123')
+                        .item
+                            img(src='http://loremflickr.com/630/300' alt='123')
+                        .item
+                            img(src='http://loremflickr.com/630/300' alt='123')
+
+            .nav
+                ul
+                    li
+                        a(href='#')
+                            img(src="img/forus.png", alt="123")
+                            span О компании
+                    li.active
+                        a(href='#')
+                            img(src="img/manager.png", alt="123")
+                            span Схема работы
+                    li
+                        a(href='#')
+                            img(src="img/news.png", alt="123")
+                            span Новости
+                    li
+                        a(href='portal.html')
+                            img(src="img/portal.png", alt="123")
+                            span Портал
+                    li
+                        a(href='#')
+                            img(src="img/contacts.png", alt="123")
+                            span Контакты
+                    li
+                        a(href='#')
+                            img(src="img/certificate.png", alt="123")
+                            span Лицензии
+            .content
+                h2.blogpost-title Как стать экспертом в CMS
+                img(src='http://lorempixel.com/1170/800' alt='123')
+                p Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum
+                p Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum
+                p Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum
+                img(src='http://lorempixel.com/400/200' alt='123' style='float:right')
+                p Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum
+                p Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum
+                img(src='http://lorempixel.com/output/technics-q-c-1170-600-9.jpg' alt='123')
+                p Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum
+                p Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum
+                b Lorem Ipsum is simply dummy text of the printing
+                strong Lorem Ipsum is simply dummy text of the printing
+                small Lorem Ipsum is simply dummy text of the printing
+                img(src='http://lorempixel.com/400/200' alt='123' style='float:left; padding-right: 10px ')
+                p Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum
+                p Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum
+                p Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum
+                img(src='http://lorempixel.com/400/200' alt='123' style='float:right')
+                p Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum
+                p Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum
+                img(src='http://lorempixel.com/output/technics-q-c-1170-600-9.jpg' alt='123')
+                p Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum
+                p Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum
+                b Lorem Ipsum is simply dummy text of the printing
+                strong Lorem Ipsum is simply dummy text of the printing
+                small Lorem Ipsum is simply dummy text of the printing
+        .footer
             .footer__wrap
                 .line
                     span @medical
