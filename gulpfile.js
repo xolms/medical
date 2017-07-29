@@ -31,7 +31,7 @@ var path = {
 				libs: 'build/libs'
     },
     src: {
-        jade: 'src/jade/*.jade',
+        jade: 'src/jade/**/*.jade',
         js: 'src/js/main.js',
 				jslibs: 'src/js/libs/*.js',
         style: 'src/style/styles.sass',

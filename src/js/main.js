@@ -15,4 +15,9 @@ jQuery(document).ready(function($) {
         $(".main-mnu").slideToggle();
         return false;
     });
+    $('a.close').click(function (e) {
+        e.preventDefault();
+        alert('Вакансия закрыта');
+        return false;
+    })
 });
